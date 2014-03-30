@@ -6,13 +6,14 @@
 Summary:	SPDY C library
 Summary(pl.UTF-8):	Biblioteka C SPDY
 Name:		spdylay
-Version:	1.1.0
+Version:	1.2.3
 Release:	1
 License:	MIT
 Group:		Libraries
-Source0:	http://downloads.sourceforge.net/spdylay/%{name}-%{version}.tar.xz
-# Source0-md5:	7208e31aee67fa71068cd19438e65cf5
-URL:		http://spdylay.sourceforge.net/
+#Source0Download: https://github.com/tatsuhiro-t/spdylay/releases
+Source0:	https://github.com/tatsuhiro-t/spdylay/releases/download/v%{version}/%{name}-%{version}.tar.xz
+# Source0-md5:	1e6ee97024101fd7681792f06dd125f4
+URL:		http://tatsuhiro-t.github.io/spdylay/
 %{?with_tests:BuildRequires:	CUnit >= 2.1}
 BuildRequires:	libevent-devel >= 2.0.8
 BuildRequires:	libstdc++-devel
@@ -109,7 +110,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/spdycat
 %attr(755,root,root) %{_bindir}/spdyd
 %attr(755,root,root) %{_libdir}/libspdylay.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libspdylay.so.6
+%attr(755,root,root) %ghost %{_libdir}/libspdylay.so.7
 
 %files devel
 %defattr(644,root,root,755)
