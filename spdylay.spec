@@ -7,7 +7,7 @@ Summary:	SPDY C library
 Summary(pl.UTF-8):	Biblioteka C SPDY
 Name:		spdylay
 Version:	1.3.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/tatsuhiro-t/spdylay/releases
