@@ -6,13 +6,13 @@
 Summary:	SPDY C library
 Summary(pl.UTF-8):	Biblioteka C SPDY
 Name:		spdylay
-Version:	1.3.2
-Release:	2
+Version:	1.4.0
+Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/tatsuhiro-t/spdylay/releases
 Source0:	https://github.com/tatsuhiro-t/spdylay/releases/download/v%{version}/%{name}-%{version}.tar.xz
-# Source0-md5:	69da2cfa2ec72053d88c6ae0c1d9089c
+# Source0-md5:	d1c976a8d2e222b00cee4b180be5e022
 URL:		http://tatsuhiro-t.github.io/spdylay/
 %{?with_tests:BuildRequires:	CUnit >= 2.1}
 BuildRequires:	libevent-devel >= 2.0.8
